@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
+import zvonimirPhoto from "@/assets/zvonimir-filipovic.png";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
@@ -104,8 +105,8 @@ const Contact = () => {
             {/* Owner Info Card */}
             <div className="bg-gradient-hero rounded-2xl p-6 text-primary-foreground">
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center border-2 border-gold/30">
-                  <span className="font-display text-xl font-bold">ZF</span>
+                <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-gold/30">
+                  <img src={zvonimirPhoto} alt="dr. sc. Zvonimir Filipović" className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <div className="font-display text-lg font-semibold">

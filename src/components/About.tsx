@@ -1,4 +1,5 @@
 import { Award, BookOpen, Target, CheckCircle } from "lucide-react";
+import zvonimirPhoto from "@/assets/zvonimir-filipovic.png";
 
 const About = () => {
   const highlights = [
@@ -27,9 +28,9 @@ const About = () => {
               {/* Main Card */}
               <div className="bg-gradient-hero rounded-2xl p-8 md:p-12 shadow-elevated">
                 <div className="text-center">
-                  {/* Avatar Circle */}
-                  <div className="w-32 h-32 bg-gold/20 rounded-full mx-auto mb-6 flex items-center justify-center border-4 border-gold/30">
-                    <span className="font-display text-4xl font-bold text-primary-foreground">ZF</span>
+                  {/* Photo */}
+                  <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden border-4 border-gold/30">
+                    <img src={zvonimirPhoto} alt="dr. sc. Zvonimir Filipović" className="w-full h-full object-cover" />
                   </div>
                   
                   <h3 className="font-display text-2xl md:text-3xl font-bold text-primary-foreground mb-2">
@@ -64,7 +65,7 @@ const About = () => {
                     <Award className="w-6 h-6 text-gold" />
                   </div>
                   <div>
-                    <div className="font-display text-xl font-bold text-foreground">15+</div>
+                    <div className="font-display text-xl font-bold text-foreground">25+</div>
                     <div className="font-body text-sm text-muted-foreground">Godina iskustva</div>
                   </div>
                 </div>
