@@ -10,7 +10,7 @@ const Hero = () => {
   };
 
   const stats = [
-    { icon: Award, value: "15+", label: "Godina iskustva" },
+    { icon: Award, value: "25+", label: "Godina iskustva" },
     { icon: Users, value: "100+", label: "Zadovoljnih klijenata" },
     { icon: TrendingUp, value: "200+", label: "Projekata" },
   ];
