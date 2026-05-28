@@ -27,11 +27,6 @@ const Hero = () => {
           <em>Intellectum</em>
         </h1>
 
-        <p className="zi-hero-sub">
-          Strateško savjetovanje i poslovne usluge za vaš uspjeh.
-          <br />
-          Akademska izvrsnost u službi poslovnog rasta.
-        </p>
 
         <div className="zi-hero-actions">
           <button className="zi-btn-solid" onClick={() => scrollTo("#usluge")}>
