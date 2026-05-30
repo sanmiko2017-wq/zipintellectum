@@ -138,27 +138,27 @@ a{text-decoration:none;color:inherit}
 @media(max-width:900px){.zi-contact-grid{grid-template-columns:1fr;gap:48px}}
 .zi-contact-info-list{display:flex;flex-direction:column;gap:30px;margin-bottom:44px}
 .zi-contact-item{display:flex;align-items:flex-start;gap:18px}
-.zi-contact-icon-wrap{width:40px;height:40px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--gold);flex-shrink:0}
-.zi-contact-label{font-size:10px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:3px}
-.zi-contact-val{font-size:14.5px;font-weight:300;color:var(--cream)}
+.zi-contact-icon-wrap{width:48px;height:48px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--gold);flex-shrink:0}
+.zi-contact-label{font-size:11.5px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+.zi-contact-val{font-size:16px;font-weight:300;color:var(--cream)}
 .zi-contact-val-link{transition:color 0.3s var(--ease)}
 .zi-contact-val-link:hover{color:var(--gold)}
-.zi-consultant-card{border:1px solid var(--border);padding:26px;display:flex;gap:18px;align-items:flex-start;background:var(--cream-ghost)}
-.zi-consultant-photo-wrap{width:54px;height:54px;flex-shrink:0;overflow:hidden}
+.zi-consultant-card{border:1px solid var(--border);padding:28px;display:flex;gap:20px;align-items:flex-start;background:var(--cream-ghost)}
+.zi-consultant-photo-wrap{width:62px;height:62px;flex-shrink:0;overflow:hidden}
 .zi-consultant-photo{width:100%;height:100%;object-fit:cover;object-position:top;filter:grayscale(25%)}
-.zi-consultant-name{font-family:var(--font-display);font-size:1.05rem;font-weight:400;color:var(--cream);margin-bottom:2px}
-.zi-consultant-role{font-size:10px;font-weight:400;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
-.zi-consultant-quote{font-family:var(--font-display);font-style:italic;font-size:0.92rem;color:var(--cream-dim);line-height:1.6}
-.zi-form{display:flex;flex-direction:column;gap:22px}
-.zi-form-group{display:flex;flex-direction:column;gap:7px}
-.zi-form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.zi-consultant-name{font-family:var(--font-display);font-size:1.2rem;font-weight:400;color:var(--cream);margin-bottom:3px}
+.zi-consultant-role{font-size:11.5px;font-weight:400;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.zi-consultant-quote{font-family:var(--font-display);font-style:italic;font-size:1.05rem;color:var(--cream-dim);line-height:1.6}
+.zi-form{display:flex;flex-direction:column;gap:24px}
+.zi-form-group{display:flex;flex-direction:column;gap:8px}
+.zi-form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 @media(max-width:540px){.zi-form-row{grid-template-columns:1fr}}
-.zi-form-label{font-size:10px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold)}
-.zi-form-input{background:var(--cream-ghost);border:1px solid var(--border);color:var(--cream);font-family:var(--font-body);font-size:14px;font-weight:300;padding:13px 16px;outline:none;width:100%;transition:border-color 0.3s var(--ease),background 0.3s var(--ease)}
-.zi-form-input::placeholder{color:rgba(242,236,226,0.2)}
+.zi-form-label{font-size:11.5px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold)}
+.zi-form-input{background:var(--cream-ghost);border:1px solid var(--border);color:var(--cream);font-family:var(--font-body);font-size:15.5px;font-weight:300;padding:14px 18px;outline:none;width:100%;transition:border-color 0.3s var(--ease),background 0.3s var(--ease)}
+.zi-form-input::placeholder{color:rgba(242,236,226,0.25)}
 .zi-form-input:focus{border-color:var(--gold-border);background:rgba(242,236,226,0.04)}
 .zi-form-textarea{resize:none;line-height:1.75}
-.zi-btn-submit{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--gold);color:var(--ink);font-family:var(--font-body);font-size:11px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;padding:16px 36px;border:none;cursor:pointer;transition:background 0.3s var(--ease),transform 0.2s var(--ease);align-self:flex-start}
+.zi-btn-submit{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--gold);color:var(--ink);font-family:var(--font-body);font-size:13px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;padding:18px 40px;border:none;cursor:pointer;transition:background 0.3s var(--ease),transform 0.2s var(--ease);align-self:flex-start}
 .zi-btn-submit:hover{background:var(--gold-light);transform:translateY(-1px)}
 
 /* FOOTER */
