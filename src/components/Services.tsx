@@ -29,7 +29,7 @@ const Services = () => (
             <div className="zi-service-top">
               <span className="zi-service-num">{s.num}</span>
               <div className="zi-service-icon-wrap">
-                <s.icon size={17} />
+                <s.icon size={22} />
               </div>
             </div>
             <h3 className="zi-service-title">{s.title}</h3>
