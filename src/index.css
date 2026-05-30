@@ -121,15 +121,15 @@ a{text-decoration:none;color:inherit}
 .zi-about-frame{position:absolute;top:-14px;left:-14px;right:14px;bottom:14px;border:1px solid var(--gold-border);z-index:-1;pointer-events:none}
 .zi-about-badge{position:absolute;bottom:-22px;right:-22px;background:var(--gold);color:var(--ink);padding:18px 26px}
 @media(max-width:560px){.zi-about-badge{right:0;bottom:-14px}}
-.zi-about-badge-num{font-family:var(--font-display);font-size:2.2rem;font-weight:400;color:var(--ink);line-height:1;margin-bottom:3px}
-.zi-about-badge-label{font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:rgba(13,13,13,0.6)}
-.zi-about-name-block{margin-bottom:26px;padding-bottom:26px;border-bottom:1px solid var(--border)}
-.zi-about-name{font-family:var(--font-display);font-size:1.55rem;font-weight:400;color:var(--cream);margin-bottom:3px}
-.zi-about-role{font-size:10.5px;font-weight:400;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold)}
-.zi-about-text{font-size:15px;font-weight:300;color:var(--cream-dim);line-height:1.9;margin-bottom:18px}
-.zi-about-highlights{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:32px}
-.zi-about-highlight{display:flex;align-items:flex-start;gap:9px;font-size:13px;font-weight:400;color:var(--cream-dim)}
-.zi-about-check{color:var(--gold);flex-shrink:0;margin-top:2px}
+.zi-about-badge-num{font-family:var(--font-display);font-size:2.6rem;font-weight:400;color:var(--ink);line-height:1;margin-bottom:4px}
+.zi-about-badge-label{font-size:11.5px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:rgba(13,13,13,0.65)}
+.zi-about-name-block{margin-bottom:28px;padding-bottom:28px;border-bottom:1px solid var(--border)}
+.zi-about-name{font-family:var(--font-display);font-size:1.85rem;font-weight:400;color:var(--cream);margin-bottom:4px}
+.zi-about-role{font-size:12px;font-weight:400;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold)}
+.zi-about-text{font-size:16.5px;font-weight:300;color:var(--cream-dim);line-height:1.9;margin-bottom:20px}
+.zi-about-highlights{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:34px}
+.zi-about-highlight{display:flex;align-items:flex-start;gap:10px;font-size:14.5px;font-weight:400;color:var(--cream-dim)}
+.zi-about-check{color:var(--gold);flex-shrink:0;margin-top:3px}
 
 /* CONTACT */
 .zi-contact{background:var(--ink-2);position:relative}
