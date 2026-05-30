@@ -65,6 +65,8 @@ a{text-decoration:none;color:inherit}
 
 /* HERO */
 .zi-hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--ink)}
+.zi-hero-glow{position:absolute;top:0;left:0;width:600px;height:600px;pointer-events:none;background:radial-gradient(circle,rgba(200,169,110,0.18) 0%,rgba(200,169,110,0.08) 30%,transparent 65%);filter:blur(40px);will-change:transform;z-index:1}
+@media(max-width:768px){.zi-hero-glow{display:none}}
 .zi-hero-grid{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(200,169,110,0.033) 1px,transparent 1px),linear-gradient(90deg,rgba(200,169,110,0.033) 1px,transparent 1px);background-size:72px 72px}
 .zi-hero-vignette{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 80% 70% at 50% 50%,transparent 40%,rgba(13,13,13,0.7) 100%)}
 .zi-hero-inner{position:relative;z-index:10;text-align:center;padding:120px 48px 80px;max-width:960px;width:100%;animation:ziFadeUp 1s 0.1s both var(--ease-out)}
