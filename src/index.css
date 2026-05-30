@@ -5,17 +5,17 @@
 @tailwind utilities;
 
 :root {
-  --ink:           #0d0d0d;
-  --ink-2:         #141414;
-  --ink-3:         #1c1c1c;
-  --gold:          #c8a96e;
-  --gold-light:    #dfc08e;
-  --gold-border:   rgba(200,169,110,0.22);
-  --gold-glow:     rgba(200,169,110,0.07);
-  --cream:         #f2ece2;
-  --cream-dim:     rgba(242,236,226,0.64);
-  --cream-ghost:   rgba(242,236,226,0.055);
-  --border:        rgba(242,236,226,0.07);
+  --ink:           #1c1c1e;
+  --ink-2:         #242427;
+  --ink-3:         #2c2c30;
+  --gold:          #d4b67a;
+  --gold-light:    #ecd0a0;
+  --gold-border:   rgba(212,182,122,0.28);
+  --gold-glow:     rgba(212,182,122,0.09);
+  --cream:         #f5efe5;
+  --cream-dim:     rgba(245,239,229,0.78);
+  --cream-ghost:   rgba(245,239,229,0.06);
+  --border:        rgba(245,239,229,0.1);
   --font-display:  'Cormorant Garamond', Georgia, serif;
   --font-body:     'DM Sans', system-ui, sans-serif;
   --ease:          cubic-bezier(0.4,0,0.2,1);
