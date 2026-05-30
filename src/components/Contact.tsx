@@ -38,7 +38,7 @@ const Contact = () => {
             <div className="zi-contact-info-list">
               {contactInfo.map((item, i) => (
                 <div key={i} className="zi-contact-item">
-                  <div className="zi-contact-icon-wrap"><item.icon size={15} /></div>
+                  <div className="zi-contact-icon-wrap"><item.icon size={19} /></div>
                   <div>
                     <div className="zi-contact-label">{item.label}</div>
                     {item.href ? (
@@ -83,7 +83,7 @@ const Contact = () => {
               <textarea name="message" value={form.message} onChange={handleChange} required rows={5} className="zi-form-input zi-form-textarea" placeholder="Opišite kako vam možemo pomoći..." />
             </div>
             <button type="submit" className="zi-btn-submit">
-              <Send size={14} /> Pošalji upit
+              <Send size={16} /> Pošalji upit
             </button>
           </form>
         </div>

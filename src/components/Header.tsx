@@ -35,7 +35,7 @@ const Header = () => {
             </button>
           ))}
           <button className="zi-nav-cta" onClick={() => scrollTo("#kontakt")}>
-            <Phone size={13} /> Konzultacije
+            <Phone size={15} /> Konzultacije
           </button>
         </nav>
         <button
