@@ -1,11 +1,41 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ArrowRight, Award, Users, TrendingUp } from "lucide-react";
 
 const stats = [
-  { icon: Award, value: "25+", label: "Godina iskustva" },
-  { icon: Users, value: "100+", label: "Zadovoljnih klijenata" },
-  { icon: TrendingUp, value: "200+", label: "Projekata" },
+  { icon: Award, target: 25, suffix: "+", label: "Godina iskustva" },
+  { icon: Users, target: 100, suffix: "+", label: "Zadovoljnih klijenata" },
+  { icon: TrendingUp, target: 200, suffix: "+", label: "Projekata" },
 ];
+
+const CountUp = ({ target, suffix, duration = 1800 }: { target: number; suffix: string; duration?: number }) => {
+  const [val, setVal] = useState(0);
+  const ref = useRef<HTMLSpanElement>(null);
+  const started = useRef(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting && !started.current) {
+          started.current = true;
+          const start = performance.now();
+          const tick = (now: number) => {
+            const t = Math.min(1, (now - start) / duration);
+            const eased = 1 - Math.pow(1 - t, 3);
+            setVal(Math.round(target * eased));
+            if (t < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        }
+      });
+    }, { threshold: 0.3 });
+    io.observe(el);
+    return () => io.disconnect();
+  }, [target, duration]);
+
+  return <span ref={ref}>{val}{suffix}</span>;
+};
 
 const Hero = () => {
   const glowRef = useRef<HTMLDivElement>(null);
@@ -67,7 +97,7 @@ const Hero = () => {
 
         <div className="zi-hero-actions">
           <button className="zi-btn-solid" onClick={() => scrollTo("#usluge")}>
-            Naše usluge <ArrowRight size={15} />
+            Naše usluge <ArrowRight size={17} />
           </button>
           <button className="zi-btn-ghost" onClick={() => scrollTo("#kontakt")}>
             Kontaktirajte nas
@@ -79,7 +109,9 @@ const Hero = () => {
         <div className="zi-hero-stats">
           {stats.map((s, i) => (
             <div key={i} className="zi-stat">
-              <span className="zi-stat-val">{s.value}</span>
+              <span className="zi-stat-val">
+                <CountUp target={s.target} suffix={s.suffix} />
+              </span>
               <span className="zi-stat-label">{s.label}</span>
             </div>
           ))}
