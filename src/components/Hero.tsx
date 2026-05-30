@@ -8,11 +8,47 @@ const stats = [
 ];
 
 const Hero = () => {
+  const glowRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const glow = glowRef.current;
+    if (!section || !glow) return;
+
+    let targetX = window.innerWidth / 2;
+    let targetY = window.innerHeight / 2;
+    let currentX = targetX;
+    let currentY = targetY;
+    let raf = 0;
+
+    const onMove = (e: MouseEvent) => {
+      const rect = section.getBoundingClientRect();
+      targetX = e.clientX - rect.left;
+      targetY = e.clientY - rect.top;
+    };
+
+    const tick = () => {
+      currentX += (targetX - currentX) * 0.08;
+      currentY += (targetY - currentY) * 0.08;
+      glow.style.transform = `translate3d(${currentX - 300}px, ${currentY - 300}px, 0)`;
+      raf = requestAnimationFrame(tick);
+    };
+
+    section.addEventListener("mousemove", onMove);
+    raf = requestAnimationFrame(tick);
+    return () => {
+      section.removeEventListener("mousemove", onMove);
+      cancelAnimationFrame(raf);
+    };
+  }, []);
+
   const scrollTo = (href: string) =>
     document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
 
   return (
-    <section className="zi-hero">
+    <section className="zi-hero" ref={sectionRef}>
+      <div className="zi-hero-glow" ref={glowRef} />
       <div className="zi-hero-grid" />
       <div className="zi-hero-vignette" />
 
