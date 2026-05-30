@@ -83,7 +83,7 @@ const Contact = () => {
               <textarea name="message" value={form.message} onChange={handleChange} required rows={5} className="zi-form-input zi-form-textarea" placeholder="Opišite kako vam možemo pomoći..." />
             </div>
             <button type="submit" className="zi-btn-submit">
-              <Send size={14} /> Pošalji upit
+              <Send size={16} /> Pošalji upit
             </button>
           </form>
         </div>
