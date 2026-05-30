@@ -44,7 +44,7 @@ const About = () => (
           <div className="zi-about-highlights">
             {highlights.map((h, i) => (
               <div key={i} className="zi-about-highlight">
-                <CheckCircle size={15} className="zi-about-check" />
+                <CheckCircle size={18} className="zi-about-check" />
                 <span>{h}</span>
               </div>
             ))}
