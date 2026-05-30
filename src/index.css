@@ -46,13 +46,13 @@ a{text-decoration:none;color:inherit}
 .zi-header.scrolled{padding:14px 0;background:rgba(13,13,13,0.96);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
 .zi-header-inner{max-width:1160px;margin:0 auto;padding:0 48px;display:flex;align-items:center;justify-content:space-between}
 @media(max-width:768px){.zi-header-inner{padding:0 20px}}
-.zi-logo{font-family:var(--font-display);font-size:1.25rem;font-weight:300;letter-spacing:0.12em;text-transform:uppercase;color:var(--cream)}
+.zi-logo{font-family:var(--font-display);font-size:1.5rem;font-weight:300;letter-spacing:0.12em;text-transform:uppercase;color:var(--cream)}
 .zi-logo span{color:var(--gold);font-style:italic;text-transform:none;letter-spacing:0}
-.zi-nav{display:flex;align-items:center;gap:40px}
+.zi-nav{display:flex;align-items:center;gap:44px}
 @media(max-width:768px){.zi-nav{display:none}}
-.zi-nav-link{font-size:12px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:var(--cream-dim);transition:color 0.3s var(--ease);padding:0}
+.zi-nav-link{font-size:13.5px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:var(--cream-dim);transition:color 0.3s var(--ease);padding:0}
 .zi-nav-link:hover{color:var(--gold)}
-.zi-nav-cta{display:flex;align-items:center;gap:7px;font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink);background:var(--gold);padding:10px 20px;transition:background 0.3s var(--ease)}
+.zi-nav-cta{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink);background:var(--gold);padding:12px 22px;transition:background 0.3s var(--ease)}
 .zi-nav-cta:hover{background:var(--gold-light)}
 .zi-hamburger{display:none;flex-direction:column;gap:5px;padding:4px;cursor:pointer}
 @media(max-width:768px){.zi-hamburger{display:flex}}
