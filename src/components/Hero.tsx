@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { ArrowRight, Award, Users, TrendingUp } from "lucide-react";
 
 const stats = [
