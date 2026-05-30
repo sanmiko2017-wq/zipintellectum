@@ -38,7 +38,7 @@ const Contact = () => {
             <div className="zi-contact-info-list">
               {contactInfo.map((item, i) => (
                 <div key={i} className="zi-contact-item">
-                  <div className="zi-contact-icon-wrap"><item.icon size={15} /></div>
+                  <div className="zi-contact-icon-wrap"><item.icon size={19} /></div>
                   <div>
                     <div className="zi-contact-label">{item.label}</div>
                     {item.href ? (
